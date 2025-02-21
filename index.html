@@ -1,0 +1,26 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20BEC0215</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>BFHL Frontend</h1>
+    <textarea id="jsonInput" placeholder='Enter JSON like { "data": ["A", "1", "B"] }'></textarea>
+    <button onclick="submitData()">Submit</button>
+    
+    <select id="filterOptions" onchange="filterResponse()">
+        <option value="all">Show All</option>
+        <option value="alphabets">Alphabets</option>
+        <option value="numbers">Numbers</option>
+        <option value="highest_alphabet">Highest Alphabet</option>
+    </select>
+    
+    <div id="response"></div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
